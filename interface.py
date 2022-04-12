@@ -14,10 +14,10 @@ from tiles import TileBlock
 
 class Interface(Widget):
 	"""Interface"""
-	line_area			    = [ ]
-	all_tiles 			   = [ ]
-	tiles_clock 			 = [ ]
-	tile_boolean			 = [ ]
+	line_area = [ ]
+	all_tiles = [ ]
+	tiles_clock = [ ]
+	tile_boolean = [ ]
 	check_press_tile_boolean = [ ]
 
 	def __init__(self, **kwargs):
@@ -95,24 +95,24 @@ class Interface(Widget):
 		"""All Menu Choices"""
 		if self.selection == 1:
 			return [self.width * 0.25,
-				self.width * 0.50,
-				self.width * 0.75]
-		if self.selection == 2:
-			return [self.width * 0,
-				self.width * 0.50,
-				self.width * 0.75]
-		if self.selection == 3:
-			return [self.width * 0,
-				self.width * 0.25,
-				self.width * 0.75]
-		if self.selection == 4:
-			return [self.width * 0,
-				self.width * 0.25,
-				self.width * 0.50]
-		return [self.width * 0,
-			self.width * 0.25,
 			self.width * 0.50,
 			self.width * 0.75]
+		if self.selection == 2:
+			return [self.width * 0,
+			self.width * 0.50,
+			self.width * 0.75]
+		if self.selection == 3:
+			return [self.width * 0,
+			self.width * 0.25,
+			self.width * 0.75]
+		if self.selection == 4:
+			return [self.width * 0,
+			self.width * 0.25,
+			self.width * 0.50]
+		return [self.width * 0,
+		self.width * 0.25,
+		self.width * 0.50,
+		self.width * 0.75]
 
 	def move_tiles(self, index, delta_time):
 		"""Move the Tiles"""
